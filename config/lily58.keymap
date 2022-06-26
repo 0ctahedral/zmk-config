@@ -9,9 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-/*
 
-    behaviors {
+    
+/ {
+
+behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -22,13 +24,8 @@
             bindings = <&kp>, <&kp>;
         };
     };
-*/
 
-&mt {
-  tapping-term-ms = <200>;
-};
 
-/ {
 
 	keymap {
 		compatible = "zmk,keymap";
